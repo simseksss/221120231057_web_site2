@@ -1,0 +1,346 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 2;
+}
+.header h1 {
+    text-align: center;
+}
+.profil {
+    display: flex;
+    margin-left: 18%;
+}
+
+.header h1 {
+    color: #ffffff;
+    background-color: rgba(52, 60, 103, 0.5); /* Menüyü saydamlaştırmak için rgba kullanıyoruz */
+    width: 100%;
+    text-align: center;
+    height: 50px;
+    line-height: 50px;
+    cursor: pointer;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+
+body {
+    background: url(https://images.pexels.com/photos/2258536/pexels-photo-2258536.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+    background-size: cover;
+    min-height: 100vh;
+}
+
+.side {
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    position: fixed;
+    top: 70px;
+    align-items: center;
+    z-index: 1; /* Menüyü arka plan resminin üzerine taşıyoruz */
+}
+
+.side .sol {
+    position: fixed;
+    background-color: rgba(55, 65, 97, 0.6); /* Menüyü saydamlaştırmak için rgba kullanıyoruz */
+    border-radius: 8px;
+    width: 200px;
+    height: 490px;
+    display: flex;
+    left: 10px;
+    align-items: center;
+    justify-content: center;
+    top: 90px;
+   
+}
+
+.side .sol a {
+    position: relative;
+    top: 20px;
+    margin-bottom: 75px;
+    display: flex;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 20px;
+    justify-content: center;
+    width: 180px;
+    transition: 0.5s all;
+    
+}
+
+.side .sol a:hover {
+    background-color: rgba(55, 62, 100, 0.8); 
+    transform: scale(1.1);
+    color: #ffffff;
+}
+
+.sag {
+    display: flex;
+    position: fixed;
+    top: 70px;
+    float: right;
+    left: 1200px;
+    background-color: rgba(56, 46, 84, 0.1); /* Menüyü saydamlaştırmak için rgba kullanıyoruz */
+    
+    z-index: 1; /* Menüyü arka plan resminin üzerine taşıyoruz */
+}
+
+.sag h2 {
+    color: #ffffff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.sag form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(54, 54, 94, 0.1); /* Menüyü saydamlaştırmak için rgba kullanıyoruz */
+    padding: 20px;
+   
+}
+
+.sag form input[type="text"] {
+    margin: 5px;
+    padding: 10px;
+    width: 300px;
+    height: 40px;
+    border-radius: 8px;
+    border: 3px solid rgba(55, 61, 93, 0.8); /* Menüyü saydamlaştırmak için rgba kullanıyoruz */
+    text-align: center;
+    background-color: #ffffff;
+}
+
+#açıklama {
+    height: 300px;
+}
+
+.sag form input[type="submit"] {
+    width: 200px;
+    height: 30px;
+    font-size: 20px;
+    border-radius: 8px;
+    color: #ffffff;
+    transition: 0.5s all;
+    border: 3px solid rgba(55, 62, 93, 0.8); /* Menüyü saydamlaştırmak için rgba kullanıyoruz */
+    background-color: rgba(55, 61, 98, 0.8); /* Menüyü saydamlaştırmak için rgba kullanıyoruz */
+}
+
+.sag form input[type="submit"]:hover {
+    transform: scale(1.2);
+    background-color: rgba(56, 65, 105, 0.8); /* Menüyü saydamlaştırmak için rgba kullanıyoruz */
+    border: none;
+    color: #f5f1f1;
+}
+
+footer {
+    background-color: rgba(56, 62, 101, 0.8); /* Menüyü saydamlaştırmak için rgba kullanıyoruz */
+    color: #ffffff;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 30px;
+    z-index: 2;
+}
+
+.social ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    padding: 0;
+}
+
+.social li {
+    margin: 0 10px;
+}
+
+.social li a img {
+    height: 30px;
+    width: auto;
+    filter: grayscale(3);
+    transition: 0.5s;
+}
+
+.social li a img:hover {
+    filter: grayscale(0);
+    transform: scale(1.2);
+}
+
+.orta {
+   
+    width: calc(100% - 430px);
+    max-width: 900px;
+    margin-left: 220px;
+    margin-top: 50px;
+    padding: 20px;
+}
+
+.orta h3 {
+    color: #514b83;
+    font-size: 30px;
+    text-align: center;
+}
+
+.orta p {
+    color: white;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+@keyframes changeTextColor {
+    0% { color: #ff6347; } /* Başlangıç rengi */
+    50% { color: #4a4e69; } /* Yarı noktada yeni bir renge geçiş */
+    100% { color: #ff6347; } /* Son renk */
+}
+
+
+/* Mobil Cihazlar için Ek CSS */
+
+/* Sol Menü */
+@media only screen and (max-width: 768px) {
+    .side .sol {
+        position: relative; /* Mobil cihazlarda sabit pozisyonu kaldır */
+        width: auto; /* Mobil cihazlarda genişliği otomatik ayarla */
+        height: auto; /* Mobil cihazlarda yüksekliği otomatik ayarla */
+        margin: 10px; /* Kenarlardan bir miktar boşluk bırak */
+        top: 0; /* Yukarıdan bir miktar boşluk bırak */
+        left: 0; /* Soldan bir miktar boşluk bırak */
+    }
+
+    .side .sol a {
+        margin-bottom: 10px; /* Mobil cihazlarda linkler arasındaki boşluğu azalt */
+    }
+}
+
+/* Görüş ve Öneriler Formu */
+@media only screen and (max-width: 768px) {
+    .sag {
+        position: relative; /* Mobil cihazlarda sabit pozisyonu kaldır */
+        width: auto; /* Mobil cihazlarda genişliği otomatik ayarla */
+        float: none; /* Mobil cihazlarda float'ı kaldır */
+        margin-top: 20px; /* Üstten bir miktar boşluk bırak */
+    }
+}
+
+/* Görüş ve Öneriler Formu Inputları */
+@media only screen and (max-width: 768px) {
+    .sag form input[type="text"],
+    .sag form input[type="submit"] {
+        width: 80%; /* Mobil cihazlarda input genişliğini ayarla */
+        margin: 5px auto; /* Mobil cihazlarda ortalamak için margin ekle */
+    }
+}
+#hobi {
+    text-align: center; /* Metni ortala */
+}
+#hobi {
+    text-align: center; /* Metni ortala */
+    color: #fefefe; /* Metin rengi */
+    font-size: 28px; /* Metin font boyutu */
+    margin-bottom: 20px; /* Alt boşluk */
+}
+#hobi + p {
+    color: #ffffff; /* Metin rengi */
+    font-size: 18px; /* Metin font boyutu */
+    line-height: 1.5; /* Satır yüksekliği */
+    margin-bottom: 20px; /* Alt boşluk */
+    background-color: rgba(0, 0, 0, 0.5); /* Metnin arka planını saydamlaştır */
+    padding: 10px; /* Metin içeriğine dolgu ekle */
+    border-radius: 5px; /* Kenarlara yuvarlaklık ekle */
+    transition: box-shadow 0.3s ease; /* Gölge değişimini animasyonla yap */
+    box-shadow: 0 0 10px rgba(251, 251, 251, 0); /* Başlangıçta gölge yok */
+}
+
+#hobi + p:hover {
+    background-color: rgba(0, 0, 0, 0.7); /* Metnin üzerine gelindiğinde arka planı biraz daha koyulaştır */
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5); /* Metnin üzerine gelindiğinde gölge ekle */
+}
+/* Genel CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.anasayfa-btn {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    padding: 10px 20px;
+    background-color: #4a4e69;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+    z-index: 9999; /* Butonun diğer öğelerin üzerine gelmesini sağlar */
+}
+
+.anasayfa-btn:hover {
+    background-color: #6b7089;
+}
+
+/* Diğer stillendirme kodları buraya eklenebilir */
+.profil {
+    position: relative;
+    display: flex;
+    top: 1200px;
+    left: 250px;
+    width: 257px;
+    height: 275px;
+    top: 50px;
+    border-radius: 8px;
+}
+.orta{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 900px;
+    top: 50%;
+    height: auto;
+    }
+.orta p {
+    text-align: center;
+}
+.profil img {
+    border-radius: 8px;
+    border: 3px solid white;
+}
+/* style.css */
+
+/* Genel stillendirme */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Anasayfa butonu */
+.anasayfa-btn {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    padding: 10px 20px;
+    background-color: #4a4e69;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+    z-index: 9999; /* Butonun diğer öğelerin üzerine gelmesini sağlar */
+}
+
+.anasayfa-btn:hover {
+    background-color: #6b7089;
+}
+
+/* Diğer stillendirme kodları buraya eklenebilir */

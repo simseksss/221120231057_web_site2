@@ -1,0 +1,79 @@
+#sorular {
+    color: #000000; /* Başlık ve soru metin rengi */
+    font-size: 24px; /* Başlık font boyutu */
+    margin-bottom: 20px; /* Alt boşluk */
+    text-align: center; /* Başlığı ortala */
+    position: relative; /* Konumlandırma için */
+}
+
+.question {
+    color: #000000; /* Soru metin rengi */
+    font-size: 18px; /* Soru font boyutu */
+    line-height: 1.5; /* Satır yüksekliği */
+    margin-bottom: 20px; /* Alt boşluk */
+    background-color: rgba(255, 255, 255, 0.1); /* Soru arka planını hafif saydam beyaz yap */
+    padding: 10px; /* Soru içeriğine dolgu ekle */
+    border-radius: 5px; /* Kenarlara yuvarlaklık ekle */
+}
+
+.answer {
+    color: #ffffff; /* Cevap metin rengi */
+    font-size: 18px; /* Cevap font boyutu */
+    line-height: 1.5; /* Satır yüksekliği */
+    margin-bottom: 20px; /* Alt boşluk */
+    background-color: rgba(0, 0, 0, 0.5); /* Cevap arka planını şeffaf lacivert yap */
+    padding: 10px; /* Cevap içeriğine dolgu ekle */
+    border-radius: 5px; /* Kenarlara yuvarlaklık ekle */
+    transition: box-shadow 0.3s ease; /* Gölge değişimini animasyonla yap */
+    box-shadow: 0 0 10px rgba(251, 251, 251, 0); /* Başlangıçta gölge yok */
+}
+
+.answer:hover {
+    background-color: rgba(0, 0, 0, 0.7); /* Cevabın üzerine gelindiğinde arka planı biraz daha koyulaştır */
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5); /* Cevabın üzerine gelindiğinde gölge ekle */
+}
+
+.anasayfa-btn {
+    position: absolute;
+    top: 20px;
+    left: 20px; /* Sol üst köşeye yerleştir */
+    padding: 10px 20px;
+    background-color: #4a4e69;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.anasayfa-btn:hover {
+    background-color: #6b7089;
+}
+#sorular {
+    color: #333; /* Başlık rengi */
+    font-size: 32px; /* Başlık font boyutu */
+    margin-bottom: 20px; /* Alt boşluk */
+    text-align: center; /* Başlığı ortala */
+    position: relative; /* Konumlandırma için */
+}
+
+.question {
+    background-color: rgba(255, 255, 255, 0.8); /* Soru arkaplan rengi (saydam beyaz) */
+    padding: 20px; /* Soru kutusu iç dolgusu */
+    margin-bottom: 20px; /* Soru kutusu alt boşluk */
+    border-radius: 10px; /* Soru kutusu kenar yuvarlaklığı */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Soru kutusu gölgesi */
+}
+
+.question h3 {
+    color: #0066cc; /* Soru başlığı rengi */
+    font-size: 24px; /* Soru başlığı font boyutu */
+    margin-bottom: 10px; /* Soru başlığı alt boşluk */
+}
+
+.question p {
+    color: #333; /* Soru metni rengi */
+    font-size: 18px; /* Soru metni font boyutu */
+    line-height: 1.5; /* Soru metni satır yüksekliği */
+}
+    

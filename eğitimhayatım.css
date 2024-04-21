@@ -1,0 +1,199 @@
+#eğitim {
+    color: #fefefe; /* Başlık rengi */
+    font-size: 24px; /* Başlık font boyutu */
+    margin-bottom: 20px; /* Alt boşluk */
+    text-align: center; /* Başlığı ortala */
+    position: relative; /* Konumlandırma için */
+}
+
+#eğitim + p {
+    color: #000000; /* Metin rengi */
+    font-size: 18px; /* Metin font boyutu */
+    line-height: 1.5; /* Satır yüksekliği */
+    margin-bottom: 20px; /* Alt boşluk */
+}
+
+.anasayfa-btn {
+    position: absolute;
+    top: 20px;
+    left: 20px; /* Sol üst köşeye yerleştir */
+    padding: 10px 20px;
+    background-color: #4a4e69;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.anasayfa-btn:hover {
+    background-color: #6b7089;
+}
+
+body {
+    margin: 0; /* Sayfanın kenar boşluklarını sıfırla */
+    padding: 0; /* Sayfa içeriğinin boşluklarını sıfırla */
+    font-family: Arial, sans-serif; /* Metin fontu */
+    background-image: url(https://images.pexels.com/photos/2258536/pexels-photo-2258536.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1); /* Arka plan resmi */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed; /* Arka planın kaymasını önler */
+}
+
+#eğitim + p {
+    color: #000000; /* Metin rengi */
+    font-size: 18px; /* Metin font boyutu */
+    line-height: 1.5; /* Satır yüksekliği */
+    margin-bottom: 20px; /* Alt boşluk */
+    transition: box-shadow 0.3s ease; /* Gölge değişimini animasyonla yap */
+    box-shadow: 0 0 10px rgba(251, 251, 251, 0); /* Başlangıçta gölge yok */
+}
+
+#eğitim + p:hover {
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5); /* Metnin üzerine gelindiğinde gölge ekle */
+}
+
+#eğitim + p {
+    color: #ffffff; /* Metin rengi */
+    font-size: 18px; /* Metin font boyutu */
+    line-height: 1.5; /* Satır yüksekliği */
+    margin-bottom: 20px; /* Alt boşluk */
+    background-color: rgba(0, 0, 0, 0.5); /* Metnin arka planını şeffaf lacivert yap */
+    padding: 10px; /* Metin içeriğine dolgu ekle */
+    border-radius: 5px; /* Kenarlara yuvarlaklık ekle */
+}
+
+#eğitim + p:hover {
+    background-color: rgba(0, 0, 0, 0.7); /* Metnin üzerine gelindiğinde arka planı biraz daha koyulaştır */
+}
+
+/* Genel CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-image: url(https://images.pexels.com/photos/2258536/pexels-photo-2258536.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+/* Header */
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: rgba(52, 60, 103, 0.5);
+    text-align: center;
+    z-index: 2;
+}
+
+.header h1 {
+    color: #ffffff;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 24px;
+    line-height: 50px;
+    cursor: pointer;
+}
+
+/* Side Menu */
+.side {
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    position: relative;
+    top: 70px;
+    align-items: center;
+    z-index: 1;
+}
+
+.side .sol {
+    position: fixed;
+    background-color: rgba(55, 65, 97, 0.6);
+    border-radius: 8px;
+    width: 200px;
+    height: 490px;
+    display: flex;
+    left: 10px;
+    align-items: center;
+    justify-content: center;
+    top: 90px;
+}
+
+.side .sol a {
+    position: relative;
+    top: 20px;
+    margin-bottom: 75px;
+    display: flex;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 20px;
+    justify-content: center;
+    width: 180px;
+    transition: 0.5s all;
+}
+
+.side .sol a:hover {
+    background-color: rgba(55, 62, 100, 0.8);
+    transform: scale(1.1);
+    color: #ffffff;
+}
+
+/* Main Content */
+.orta {
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+    margin-top: 50px;
+}
+
+.orta h3 {
+    color: #514b83;
+    font-size: 30px;
+    text-align: center;
+}
+
+.orta p {
+    color: white;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+/* Footer */
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: rgba(56, 62, 101, 0.8);
+    color: #ffffff;
+    text-align: center;
+    height: 30px;
+    z-index: 2;
+}
+
+/* Responsive Tasarım */
+@media screen and (max-width: 768px) {
+    /* Header */
+    .header h1 {
+        font-size: 20px;
+        line-height: 40px;
+    }
+
+    /* Main Content */
+    .orta {
+        padding: 10px;
+        margin-top: 40px;
+    }
+
+    /* Footer */
+    footer {
+        height: 20px;
+    }
+}
